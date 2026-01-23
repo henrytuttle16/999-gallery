@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="999 Gallery - A student-run garage art gallery showcasing emerging artists and experimental work.">
+  <title>99.9 Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Garage Door Intro -->
+    <div class="garage-intro" id="garage-intro">
+      <div class="garage-door" id="garage-door">
+        <div class="garage-door-panels">
+          <div class="garage-panel"></div>
+          <div class="garage-panel"></div>
+          <div class="garage-panel"></div>
+          <div class="garage-panel"></div>
+        </div>
+        <div class="garage-door-handle"></div>
+      </div>
+      <div class="garage-content">
+        <p class="garage-text">99.9 Gallery</p>
+        <p class="garage-hint">Scroll to see current exhibit</p>
+      </div>
+    </div>
+
+    <!-- Header (hidden initially, fades in after door opens) -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a href="/" class="site-logo">99.9 GALLERY</a>
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          Menu
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="/current/">Current</a></li>
+            <li><a href="/archive/">Archive</a></li>
+            <li><a href="/submit/">Submit</a></li>
+            <li><a href="/about/">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero -->
+      <section class="hero">
+        <h1 class="hero-title">99.9 GALLERY</h1>
+        <p class="hero-tagline">Student art from the garage</p>
+      </section>
+
+      <!-- Featured Exhibition -->
+      <section class="featured-exhibition">
+        <img
+          src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1600&h=900&fit=crop"
+          alt="Current exhibition"
+          class="featured-image-large"
+        >
+        <div class="featured-content">
+          <p class="featured-label">Now Showing</p>
+          <h2 class="featured-title">Year of the Horse</h2>
+          <p class="featured-dates">February 13 — END DATE, 2026</p>
+          <a href="/current/" class="btn">View Exhibition</a>
+        </div>
+      </section>
+
+      <!-- Photo Grid Preview -->
+      <div class="container">
+        <p class="section-title">Recent Work</p>
+        <div class="masonry">
+          <div class="masonry-item">
+            <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?w=600&h=800&fit=crop" alt="Artwork">
+            <div class="masonry-item-overlay">
+              <p class="masonry-item-title">Untitled Study</p>
+              <p class="masonry-item-meta">Maya Chen</p>
+            </div>
+          </div>
+          <div class="masonry-item">
+            <img src="https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=600&h=400&fit=crop" alt="Artwork">
+            <div class="masonry-item-overlay">
+              <p class="masonry-item-title">Morning Light</p>
+              <p class="masonry-item-meta">Jordan Lee</p>
+            </div>
+          </div>
+          <div class="masonry-item">
+            <img src="https://images.unsplash.com/photo-1482160549825-59d1b23cb208?w=600&h=700&fit=crop" alt="Artwork">
+            <div class="masonry-item-overlay">
+              <p class="masonry-item-title">Composition No. 3</p>
+              <p class="masonry-item-meta">Alex Rivera</p>
+            </div>
+          </div>
+          <div class="masonry-item">
+            <img src="https://images.unsplash.com/photo-1515405295579-ba7b45403062?w=600&h=600&fit=crop" alt="Artwork">
+            <div class="masonry-item-overlay">
+              <p class="masonry-item-title">Shadow Index</p>
+              <p class="masonry-item-meta">Jordan Lee</p>
+            </div>
+          </div>
+          <div class="masonry-item">
+            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&h=500&fit=crop" alt="Artwork">
+            <div class="masonry-item-overlay">
+              <p class="masonry-item-title">Persistence</p>
+              <p class="masonry-item-meta">Alex Rivera</p>
+            </div>
+          </div>
+          <div class="masonry-item">
+            <img src="https://images.unsplash.com/photo-1544967082-d9d25d867d66?w=600&h=750&fit=crop" alt="Artwork">
+            <div class="masonry-item-overlay">
+              <p class="masonry-item-title">Through Glass</p>
+              <p class="masonry-item-meta">Maya Chen</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer-text">&copy; 2026 99.9 Gallery</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

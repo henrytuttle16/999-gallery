@@ -1,0 +1,25 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Node
+node_modules/
+package-lock.json
+
+# Generated data (rebuilt on deploy)
+data/
+
+# Local Netlify
+.netlify/
+
+# Environment files
+.env
+.env.local
+.env.*.local

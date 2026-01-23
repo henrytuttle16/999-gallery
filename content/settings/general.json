@@ -1,0 +1,15 @@
+{
+  "gallery_name": "999 Gallery",
+  "tagline": "student art from the garage",
+  "contact_email": "99.9garagegallery@gmail.com",
+  "address": "999 Example Street, Anytown, ST 12345",
+  "address_public": "Location shared upon RSVP",
+  "hours": "Saturdays & Sundays, 12-6pm during exhibitions",
+  "social": {
+    "instagram": "https://instagram.com/999gallery",
+    "twitter": "",
+    "tiktok": ""
+  },
+  "about_short": "We're a student-run art gallery operating out of a garage. No pretension, no gatekeeping—just a space for emerging artists to show their work and connect with the community.",
+  "footer_text": "Made with love in a garage."
+}

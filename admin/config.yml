@@ -1,0 +1,224 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Uncomment below to enable local development
+# local_backend: true
+
+# Media files will be stored in this folder
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+# Site URL (update after deployment)
+site_url: https://999gallery.netlify.app
+display_url: https://999gallery.netlify.app
+
+# Logo for the CMS
+logo_url: /images/logo.png
+
+# Collections
+collections:
+  # Exhibitions Collection
+  - name: "exhibitions"
+    label: "Exhibitions"
+    folder: "content/exhibitions"
+    create: true
+    slug: "{{year}}-{{month}}-{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The name of the exhibition"
+
+      - label: "Start Date"
+        name: "date_start"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        hint: "When does the exhibition open?"
+
+      - label: "End Date"
+        name: "date_end"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        hint: "When does the exhibition close?"
+
+      - label: "Currently Showing"
+        name: "is_current"
+        widget: "boolean"
+        default: false
+        hint: "Is this the current exhibition? (Only one should be current at a time)"
+
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        hint: "Main image for the exhibition (used in previews and featured sections)"
+
+      - label: "Description"
+        name: "description"
+        widget: "markdown"
+        hint: "About this exhibition - curatorial statement, themes, etc."
+
+      - label: "Artists"
+        name: "artists"
+        widget: "list"
+        summary: "{{fields.name}}"
+        fields:
+          - label: "Name"
+            name: "name"
+            widget: "string"
+          - label: "Bio"
+            name: "bio"
+            widget: "text"
+            required: false
+          - label: "Website"
+            name: "website"
+            widget: "string"
+            required: false
+
+      - label: "Artwork Images"
+        name: "images"
+        widget: "list"
+        summary: "{{fields.title}}"
+        fields:
+          - label: "Image"
+            name: "image"
+            widget: "image"
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Artist"
+            name: "artist"
+            widget: "string"
+            required: false
+          - label: "Medium"
+            name: "medium"
+            widget: "string"
+            required: false
+          - label: "Year"
+            name: "year"
+            widget: "string"
+            required: false
+          - label: "Dimensions"
+            name: "dimensions"
+            widget: "string"
+            required: false
+
+      - label: "Location Note"
+        name: "location_note"
+        widget: "string"
+        required: false
+        hint: "Any special location info (e.g., 'Opening reception on Saturday')"
+
+      - label: "Published"
+        name: "published"
+        widget: "boolean"
+        default: true
+
+  # Site Settings
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "content/settings/general.json"
+        fields:
+          - label: "Gallery Name"
+            name: "gallery_name"
+            widget: "string"
+            default: "999 Gallery"
+
+          - label: "Tagline"
+            name: "tagline"
+            widget: "string"
+            default: "student art from the garage"
+
+          - label: "Contact Email"
+            name: "contact_email"
+            widget: "string"
+            default: "99.9garagegallery@gmail.com"
+
+          - label: "Address"
+            name: "address"
+            widget: "text"
+            hint: "Full address (shown to visitors after RSVP)"
+
+          - label: "Public Address Note"
+            name: "address_public"
+            widget: "string"
+            default: "Location shared upon RSVP"
+            hint: "What to show publicly on the site"
+
+          - label: "Hours"
+            name: "hours"
+            widget: "string"
+            default: "Saturdays & Sundays, 12-6pm during exhibitions"
+
+          - label: "Social Links"
+            name: "social"
+            widget: "object"
+            fields:
+              - label: "Instagram"
+                name: "instagram"
+                widget: "string"
+                required: false
+              - label: "Twitter/X"
+                name: "twitter"
+                widget: "string"
+                required: false
+              - label: "TikTok"
+                name: "tiktok"
+                widget: "string"
+                required: false
+
+          - label: "About Text (Short)"
+            name: "about_short"
+            widget: "text"
+            hint: "Short description for homepage"
+
+          - label: "Footer Text"
+            name: "footer_text"
+            widget: "string"
+            default: "Made with love in a garage."
+
+  # Pages (for editing existing page content)
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "about"
+        label: "About Page"
+        file: "content/pages/about.md"
+        fields:
+          - label: "Page Title"
+            name: "title"
+            widget: "string"
+            default: "About 999 Gallery"
+
+          - label: "Subtitle"
+            name: "subtitle"
+            widget: "string"
+            default: "Art doesn't need a white cube."
+
+          - label: "Our Story"
+            name: "story"
+            widget: "markdown"
+
+          - label: "Gallery Photo"
+            name: "gallery_photo"
+            widget: "image"
+            required: false
+
+          - label: "Team Members"
+            name: "team"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Role"
+                name: "role"
+                widget: "string"
+              - label: "Bio"
+                name: "bio"
+                widget: "text"
