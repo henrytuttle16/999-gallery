@@ -13,6 +13,9 @@ Thumbs.db
 node_modules/
 package-lock.json
 
+# Generated data (rebuilt on deploy)
+data/
+
 # Local Netlify
 .netlify/
 
