@@ -917,6 +917,7 @@ main {
 
 /* ---------- Exhibition Detail ---------- */
 .exhibition-hero {
+  margin-top: calc(-1 * var(--space-xl));
   margin-bottom: var(--space-xl);
 }
 
