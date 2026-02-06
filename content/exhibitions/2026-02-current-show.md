@@ -3,7 +3,7 @@ title: "Year of the Horse"
 date_start: 2026-02-13
 date_end: 2026-03-31
 is_current: true
-featured_image: "/images/uploads/garage.jpeg"
+featured_image: "/images/uploads/horse.jpg"
 description: |
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fugiat dolor. Assumenda sunt ad ratione hic blanditiis? Ea, consequuntur dicta laborum nisi, fuga, officia repellendus maxime aspernatur magnam eos hic!
 

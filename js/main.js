@@ -26,16 +26,40 @@ function initImageCarousel() {
   if (slides.length <= 1) return;
 
   let currentIndex = 0;
-  const intervalTime = 4000; // 4 seconds between slides
+  const intervalTime = 5000; // 5 seconds between slides
+  let timer;
+
+  // Build indicator bars
+  const indicatorContainer = document.createElement('div');
+  indicatorContainer.className = 'carousel-indicators';
+  slides.forEach((_, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'carousel-indicator' + (i === 0 ? ' active' : '');
+    btn.setAttribute('aria-label', 'Go to image ' + (i + 1));
+    btn.addEventListener('click', () => goToSlide(i));
+    indicatorContainer.appendChild(btn);
+  });
+  carousel.appendChild(indicatorContainer);
+
+  const indicators = indicatorContainer.querySelectorAll('.carousel-indicator');
+
+  function goToSlide(index) {
+    slides[currentIndex].classList.remove('active');
+    indicators[currentIndex].classList.remove('active');
+    currentIndex = index;
+    slides[currentIndex].classList.add('active');
+    indicators[currentIndex].classList.add('active');
+    // Reset timer so it doesn't skip quickly after manual navigation
+    clearInterval(timer);
+    timer = setInterval(showNextSlide, intervalTime);
+  }
 
   function showNextSlide() {
-    slides[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % slides.length;
-    slides[currentIndex].classList.add('active');
+    goToSlide((currentIndex + 1) % slides.length);
   }
 
   // Start auto-rotation
-  setInterval(showNextSlide, intervalTime);
+  timer = setInterval(showNextSlide, intervalTime);
 }
 
 /**
