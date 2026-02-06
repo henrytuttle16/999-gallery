@@ -100,10 +100,6 @@ function renderHomePage(data) {
 
     if (featuredTitle) featuredTitle.textContent = data.current.title;
     if (featuredDates) featuredDates.textContent = data.current.dates;
-    if (featuredImage) {
-      featuredImage.src = data.current.featuredImage;
-      featuredImage.alt = data.current.title;
-    }
   }
 
   // Update "Recent Work" masonry gallery with artwork from all exhibitions
