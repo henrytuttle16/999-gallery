@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-23T17:10:23.171Z",
+  "generated": "2026-02-06T00:13:22.663Z",
   "current": {
     "slug": "2026-02-current-show",
     "title": "Year of the Horse",
@@ -102,7 +102,7 @@
       "dateEnd": "2026-03-31T00:00:00.000Z",
       "dates": "February 13 — March 31, 2026",
       "isCurrent": true,
-      "featuredImage": "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1600&h=900&fit=crop",
+      "featuredImage": "/images/uploads/horse.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fugiat dolor. Assumenda sunt ad ratione hic blanditiis? Ea, consequuntur dicta laborum nisi, fuga, officia repellendus maxime aspernatur magnam eos hic!\n\nLorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, veritatis. Est, neque. Aperiam vel ab veniam, quos ipsum hic fugiat quod natus dolorum repellat velit debitis optio suscipit, incidunt pariatur!\n",
       "descriptionHtml": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, fugiat dolor. Assumenda sunt ad ratione hic blanditiis? Ea, consequuntur dicta laborum nisi, fuga, officia repellendus maxime aspernatur magnam eos hic!</p>\n<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores, veritatis. Est, neque. Aperiam vel ab veniam, quos ipsum hic fugiat quod natus dolorum repellat velit debitis optio suscipit, incidunt pariatur!</p>\n",
       "artists": [
@@ -194,11 +194,11 @@
       "title": "Invocation",
       "dateStart": "2025-10-03T00:00:00.000Z",
       "dateEnd": "2025-11-15T00:00:00.000Z",
-      "dates": "October 3 — October 25, 2025",
+      "dates": "October 3 — November 15, 2025",
       "isCurrent": false,
       "featuredImage": "/images/uploads/invocation.jpg",
-      "description": "An exhibition exploring deity, spirit, or supernatural force.",
-      "descriptionHtml": "<p>An exhibition exploring deity, spirit, or supernatural force.</p>",
+      "description": "An exhibition exploring deity, spirit, or supernatural force.\n",
+      "descriptionHtml": "<p>An exhibition exploring deity, spirit, or supernatural force.</p>\n",
       "artists": [
         {
           "name": "Artist Name",
@@ -248,11 +248,11 @@
       "title": "End of Summer Art Show",
       "dateStart": "2025-08-29T00:00:00.000Z",
       "dateEnd": "2025-09-30T00:00:00.000Z",
-      "dates": "August 29 — September 19, 2025",
+      "dates": "August 29 — September 30, 2025",
       "isCurrent": false,
       "featuredImage": "/images/uploads/summer.jpg",
-      "description": "Our inagural art show. Mourning the loss of a summer gone by too fast.",
-      "descriptionHtml": "<p>Our inagural art show. Mourning the loss of a summer gone by too fast.</p>",
+      "description": "Our inagural art show. Mourning the loss of a summer gone by too fast.\n",
+      "descriptionHtml": "<p>Our inagural art show. Mourning the loss of a summer gone by too fast.</p>\n",
       "artists": [
         {
           "name": "Artist Name",

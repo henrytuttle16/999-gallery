@@ -3,10 +3,9 @@ title: "End of Summer Art Show"
 date_start: 2025-08-29
 date_end: 2025-09-30
 is_current: false
-featured_image: "https://images.unsplash.com/photo-1578926288207-a90a5366759d?w=800&h=600&fit=crop"
+featured_image: "/images/uploads/summer.jpg"
 description: |
-  Our inaugural art show. Mourning the loss of a summer gone by too fast.
-  A celebration featuring work from local, emerging artists.
+  Our inagural art show. Mourning the loss of a summer gone by too fast.
 artists:
   - name: "Artist Name"
     bio: "Bio goes here"

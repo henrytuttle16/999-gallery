@@ -3,10 +3,9 @@ title: "Invocation"
 date_start: 2025-10-03
 date_end: 2025-11-15
 is_current: false
-featured_image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=600&fit=crop"
+featured_image: "/images/uploads/invocation.jpg"
 description: |
-  Exhibition description goes here.
-  This is a longer description that can provide more context about the show, the themes explored, and the artists involved.
+  An exhibition exploring deity, spirit, or supernatural force.
 artists:
   - name: "Artist Name"
     bio: "Bio goes here"
